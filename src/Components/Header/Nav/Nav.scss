@@ -1,0 +1,33 @@
+.Nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: auto;
+
+  .navListItem {
+    display: flex;
+    align-items: flex-end;
+    font-size: 15px;
+    height: 100%;
+    opacity: .6;
+    position: relative;
+    transition: opacity .3s;
+
+    &::before {
+      position: absolute;
+      font-size: 20px;
+      color: #222222;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    & + .navListItem {
+      margin-left: 30px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.UserSettings {
+  z-index: 1;
+  position: absolute;
+  top: 117%;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 #222222;
+  padding: 15px 0 5px;
+  background-color: #ffffff;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 300px;
+  transition: visibility .3s, opacity .3s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .Avatar {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .UserInfo {
+    display: flex;
+  }
+
+  .UserName {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222222;
+  }
+
+  .UserProfile {
+    font-weight: 700;
+    color: #5070fe;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: #63e3d5;
+    }
+  }
+
+  .AccountTitle,
+  .ManageTitle {
+    background-color: rgba(99, 227, 213, 0.43);
+    padding: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .AccountList,
+  .ManageList {
+    > li {
+      padding: 15px 15px 15px 20px;
+
+      &:hover {
+        background-color: #bfcdcb;
+      }
+    }
+  }
+}
